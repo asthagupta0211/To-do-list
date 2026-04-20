@@ -1,17 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: #f4f4f4;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .container {
     background: white;
     padding: 20px;
-    width: 350px;
+    width: 400px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px gray;
 }
 
 h1 {
@@ -24,27 +24,42 @@ h1 {
 }
 
 input {
-    flex: 1;
     padding: 8px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 button {
-    padding: 8px 12px;
+    padding: 8px;
     cursor: pointer;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.filters {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 li {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
-    margin-bottom: 8px;
     background: #eee;
+    margin-bottom: 8px;
+    padding: 8px;
     border-radius: 5px;
 }
 
@@ -55,4 +70,15 @@ li {
 
 .actions button {
     margin-left: 5px;
+    background: #e74c3c;
+}
+
+.actions button.edit {
+    background: #2ecc71;
+}
+
+.clear-btn {
+    margin-top: 10px;
+    width: 100%;
+    background: black;
 }
